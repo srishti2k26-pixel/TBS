@@ -383,6 +383,65 @@
     transform: rotate(180deg);
 }
 
+        /* Partner Section */
+.partner-section {
+    border: 2px solid rgba(251, 191, 36, 0.3);
+    background: linear-gradient(
+        135deg,
+        rgba(30, 41, 59, 0.95),
+        rgba(15, 23, 42, 0.95)
+    );
+}
+
+.partner-card {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partner-logo img {
+    width: 140px;
+    max-width: 100%;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,0.5));
+}
+
+.partner-content h3 {
+    font-size: 1.4rem;
+    color: var(--accent);
+    margin-bottom: 6px;
+}
+
+.partner-content p {
+    color: var(--gray);
+    margin-bottom: 12px;
+}
+
+.partner-benefits {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.partner-benefits li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.partner-benefits i {
+    color: var(--accent);
+}
+
+.diamond {
+    color: #38bdf8;
+    font-weight: 800;
+}
+        
+
     </style>
 </head>
 <body>
@@ -401,6 +460,39 @@
                 <p class="tagline">Master the game, conquer the board. Join the most strategic chess community at BHU.</p>
             </div>
         </header>
+
+        <!-- Partner / Sponsor Section -->
+<section class="section partner-section">
+    <h2 class="section-title">
+        <i class="fas fa-gem"></i> Official Support Partner
+    </h2>
+
+    <div class="partner-card">
+        <div class="partner-logo">
+            <!-- Replace src with official chess.com logo if you have it -->
+            <img src="chesscom-logo.png" alt="Chess.com Logo">
+        </div>
+
+        <div class="partner-content">
+            <h3>Chess.com</h3>
+            <p>
+                The Board Slashers is proudly supported by <strong>Chess.com</strong>, 
+                providing <span class="diamond">Diamond Memberships</span> to our players.
+            </p>
+
+            <ul class="partner-benefits">
+                <li><i class="fas fa-check"></i> Diamond memberships for selected members</li>
+                <li><i class="fas fa-check"></i> Premium tournaments & training access</li>
+                <li><i class="fas fa-check"></i> Official online events hosted on Chess.com</li>
+            </ul>
+
+            <a href="https://www.chess.com" target="_blank" rel="noopener" class="cta-button">
+                <i class="fas fa-external-link-alt"></i> Visit Chess.com
+            </a>
+        </div>
+    </div>
+</section>
+        
 
         <!-- Main Content: Upcoming + Calendar -->
         <div class="content-wrapper">
@@ -830,4 +922,5 @@ calendarToggle.addEventListener('click', () => {
     </script>
 </body>
 </html>
+
 
